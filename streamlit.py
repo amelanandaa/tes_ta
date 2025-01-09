@@ -9,7 +9,7 @@ Original file is located at
 # python -m pip install ultralytics==8.0.44
 
 import streamlit as st
-import cv2
+# import cv2
 import numpy as np
 import torch
 import re
