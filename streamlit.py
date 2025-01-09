@@ -10,7 +10,7 @@ Original file is located at
 import streamlit as st
 # import cv2
 import numpy as np
-import torch
+# import torch
 import re
 import pandas as pd
 from ultralytics import YOLO
