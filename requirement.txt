@@ -1,8 +1,8 @@
 # Library utama
 streamlit==1.26.0
+opencv-python==4.8.0.74
 ultralytics==8.0.20
 pytesseract==0.3.10
-opencv-python==4.5.3.56
 torch==2.0.1
 numpy==1.25.2
 pandas==2.1.4
