@@ -2,8 +2,8 @@
 streamlit==1.26.0
 ultralytics==8.0.44
 pytesseract==0.3.10
-opencv-python==4.8.0.74
-torch>=1.7.0
+opencv-python-headless==4.8.0.74
+torch==2.0.1
 numpy==1.25.2
 pandas==2.1.4
 gdown==4.7.1
