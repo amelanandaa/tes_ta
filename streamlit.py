@@ -111,7 +111,7 @@ if uploaded_file is not None:
         f.write(uploaded_file.getbuffer())
 
     # Gunakan API OCR.space untuk ekstrak teks
-    extracted_text = ocr_using_tesseract_api("uploaded_receipt.png", api_key='YOUR_API_KEY')
+    extracted_text = ocr_using_tesseract_api("uploaded_receipt.png", api_key='K89469847988957')
 
     if extracted_text:
         # Tampilkan teks hasil OCR
