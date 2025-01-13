@@ -57,10 +57,10 @@ def process_text_with_regex(text):
 #     extracted_text = pytesseract.image_to_string(image, lang='eng')
 #     return extracted_text, image
 
-def ocr_space_url(filename, api_key='K89469847988957'):
+def ocr_using_tesseract_api(filename, api_key='K89469847988957'):
     url = 'https://api.ocr.space/parse/image'
-    with open(filename, 'rb') as file:
-        r = requests.post(url, files={filename: file}, data={'apikey': api_key})
+    with open(image_path, 'rb') as file:
+        r = requests.post(url, files={image_path: image_file}, data={'apikey': api_key})
     return r.json()
     
     if result['IsErroredOnProcessing'] == False:
