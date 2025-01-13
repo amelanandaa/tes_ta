@@ -60,6 +60,7 @@ def process_text_with_regex(text):
 def ocr_using_tesseract_api(image_path, api_key='K89469847988957'):
     url = 'https://api.ocr.space/parse/image'
     response = requests.post(url, files={'file':image_path}, data={'apikey': api_key})
+    st.write(response.json())
     result = response.json()
     
     if result['IsErroredOnProcessing'] == False:
@@ -67,7 +68,7 @@ def ocr_using_tesseract_api(image_path, api_key='K89469847988957'):
         text = result['ParsedResults'][0]['ParsedText']
         return text
     else:
-        print("OCR failed. Error:", result['ErrorMessage'])
+        st.error(f"OCR failed. Error: {result['ErrorMessage']}")
         return None
 
 
