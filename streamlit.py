@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import re
 import pandas as pd
-import pytesseract
+# import pytesseract
 from PIL import Image
 import requests
 
