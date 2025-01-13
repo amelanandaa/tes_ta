@@ -57,7 +57,7 @@ def process_text_with_regex(text):
 #     extracted_text = pytesseract.image_to_string(image, lang='eng')
 #     return extracted_text, image
 
-def ocr_using_tesseract_api(imagege_path, api_key='K89469847988957'):
+def ocr_using_tesseract_api(image_path, api_key='K89469847988957'):
     url = 'https://api.ocr.space/parse/image'
     with open(image_path, 'rb') as file:
         r = requests.post(url, files={image_path: image_file}, data={'apikey': api_key})
